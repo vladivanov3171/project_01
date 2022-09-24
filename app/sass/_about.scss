@@ -1,0 +1,208 @@
+
+.about {
+    padding-top: 26px;
+    padding-bottom: 60px;
+    &__box {
+        display: flex;
+    flex-direction: column;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: none;
+        text-decoration: none;
+        &:last-child {
+            padding-top: 30px;
+        }
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: $basic-black;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 30px;
+        &--pp19 {
+            padding-top: 19px;
+        }
+        &--pp20 {
+            padding-top: 20px;
+        }
+    }
+    &__stat {
+        border-left: 4px solid $grey-separator;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__article {
+        padding-left: 30px;
+        padding-top: 40px;
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+    &__words {
+        padding-top: 6px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main;
+        text-transform: none;
+        text-decoration: none;
+    } 
+    &__team {
+        margin: 0 -30px;
+        background-image: url(../img/team.png);
+        background-color: $team;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 114px;
+    }
+    &__people {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 13px;
+        color: $basic-white;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px $people;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-left: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding-top: 60px;
+        &__title {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: $gradient-redtext;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: none;
+            text-decoration: none;
+        }
+        &__team {
+            margin: 0 -60px;
+        }
+        &__block {
+            height: 234px;
+        }
+        &__stat {
+            margin-bottom: 60px;
+        }
+        &__block {
+            margin-bottom: 30px;
+        }
+        &__people {
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 56px;
+            text-align: center;
+            letter-spacing: 63px;
+            text-transform: uppercase;
+            color: $basic-white;
+            opacity: 0.8;
+            text-shadow: 0px 15px 30px $people;
+            text-decoration: none;
+            padding-left: 62px;
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .about {
+        &__box {
+            display: grid;
+            grid-template-columns: 1fr 388px;
+            grid-template-rows: auto;
+            align-items: flex-start;
+        }
+        &__box--bot { 
+            grid-template-columns: 1fr 362px;
+        }
+        &__block {
+            height: 312px;
+            margin-top: 59px;
+            margin-bottom: 32px;
+        }
+        &__people {
+            font-weight: 700;
+            font-size: 86px;
+            line-height: 105px;
+            text-align: center;
+            letter-spacing: 63px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $basic-white;
+            opacity: 0.8;
+            text-shadow: 0px 15px 30px $people;
+        }
+        &__stat {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 388px;
+        }
+        &__info {
+            margin-right: 30px;
+        }
+        &__text {
+            padding-top: 29px;
+            &--pp19 {
+                padding-top: 19px;
+            }
+            &--pp20 {
+                padding-top: 20px;
+            }
+        }
+        &__text--mr {
+            margin-right: 61px;
+        }
+        &__title:last-child {
+            padding-top: 29px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .about {
+        &__block {
+            height: 438px;
+        }
+        &__people {
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 117px;
+            text-align: center;
+            letter-spacing: 63px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $basic-white;
+            opacity: 0.8;
+            text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+            padding-top: 5px;
+        }
+    }
+}
+
+@media (min-resolution: 200dpi), (min-resolution: 2dppx) {
+    .about__team {
+        background-image: url(../img/team@2x.png);
+    }
+}
+

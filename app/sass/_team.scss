@@ -1,0 +1,152 @@
+.team {
+    padding-top: 50px;
+    &__item {
+        background: $grey-bg;
+        border-radius: 12px;
+    }
+    &__img {
+        height: 500px;
+        border-radius: 12px 12px 0px 0px;
+    }
+    &__frame {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px 12px 0px 0px;
+    }
+    &__info {
+        padding: 30px;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.05em;
+        background: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 5px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey-text;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 31px;
+        padding-right: 12px;
+        letter-spacing: 0.07em;
+    }
+    &__job {
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey-text;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 6px;
+        letter-spacing: 0.09em;
+    }
+    &__box {
+        display: flex;
+        & a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $active-regular;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        transition-duration: 2000ms;
+        transition-property: font-size;
+        &:hover {
+           font-size: 50px;
+           color: $basic-black;
+        }
+        &:hover svg path {
+            stroke: $basic-black;
+        }
+        &:hover svg {
+            transform: rotate(180deg);
+        }
+    }
+    &__arrow {
+        & svg {
+            display: block;
+        }
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    &__btn {
+        margin-left: 7px;
+        margin-right: 7px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        & svg {
+            display: block;
+        }
+        & svg:hover circle {
+            opacity: 0.6;
+        }
+        &.current svg circle {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 80px;
+        &__text {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 6px;
+            letter-spacing: 0.06em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        padding-top: 79px;
+        &__item {
+            display: flex;
+        }
+        &__frame {
+            height: 100%;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 12px 0px 0px 12px;
+        }
+        &__img {
+            height: auto;
+        }
+       &__text {
+            letter-spacing: 0.06em; 
+        }
+    }
+}
+
+@media (min-width: 1418px) {
+    .team {
+        &__frame {
+            height: 344px;
+        }
+        &__dots {
+            padding-top: 28px;
+        }
+    }
+}

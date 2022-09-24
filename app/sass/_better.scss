@@ -1,0 +1,152 @@
+.better {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    &__box {
+        display: flex;
+        & a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $active-regular;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        transition-duration: 2000ms;
+        transition-property: font-size;
+        &:hover {
+           font-size: 50px;
+           color: $basic-white;
+        }
+        &:hover svg path {
+            stroke: $basic-white
+        }
+        &:hover svg {
+            transform: rotate(180deg);
+        }
+    }
+    &__arrow {
+        margin-left: 2px;
+        & svg {
+            display: block;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradient-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 10px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        padding-top: 30px;
+    }
+    &__img {
+        width: 92px;
+        height: 92px;
+        background: $basic-white;
+        border-radius: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &--it {
+            background-image: url(../img/better-it.svg);
+        }
+        &--comp {
+            background-image: url(../img/better-comp.svg);
+        }
+        &--struct {
+            background-image: url(../img/better-struct.svg);
+        }
+        &--build {
+            background-image: url(../img/better-build.svg);
+        }
+        &--prot {
+            background-image: url(../img/better-prot.svg);
+        }
+        &--judic {
+            background-image: url(../img/better-judic.svg);
+        }
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $active-regular;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 30px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        color: $basic-white;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .better {
+        padding-top: 60px;
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item {
+            padding-top: 60px;
+            width: 50%;
+            &:nth-child(2n) {
+                padding-left: 30px;
+            }
+            &:nth-child(2n-1) {
+                padding-right: 30px;
+            }
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: $gradient-redtext;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: none;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .better {
+        padding-top: 60px;
+        &__item {
+            width: 33.333%;
+            &:nth-child(3n) {
+                padding-left: 40px;
+                padding-right: 0;
+            }
+            &:nth-child(3n-1) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            &:nth-child(3n-2) {
+                padding-right: 40px;
+                padding-left: 0;
+            }
+        }
+    }
+}

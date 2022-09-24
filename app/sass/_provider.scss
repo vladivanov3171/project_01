@@ -1,0 +1,71 @@
+.provider {
+    padding-top: 126px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__text {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $basic-white;
+        text-transform: none;
+        text-decoration: none;
+        padding-bottom: 158px;
+    }
+    &__link {
+        text-align: center;
+        & svg {
+            display: block;
+            transition-duration: 2000ms;
+            transition-property: width, height;
+            animation-name: load;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            &:hover {
+                width: 84px;
+                height: 84px;
+            }
+            &:hover path {
+                stroke: $accent;
+            }
+            &:hover circle {
+                stroke: $accent;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .provider {
+        padding-top: 269px;
+        &__text {
+            padding-bottom: 417px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .provider {
+        padding-top: 245px;
+        &__text {
+            padding-bottom: 289px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .provider {
+        padding-top: 261px;
+        &__text {
+            padding-bottom: 305px;
+        }
+    }
+}
+
+@keyframes load {
+    100% {
+        transform: rotate(360deg);
+    }
+}

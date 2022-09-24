@@ -1,0 +1,96 @@
+.trust {
+    padding-top: 60px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $main;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    &__list {
+        margin: 0 -30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__color {
+        background: transparent;
+        &--blue {
+            background: $bg-01;
+        }
+        &--blue-dark {
+            background: $bg-02;
+        }
+        &--tap {
+            background: $bg-03;
+        }
+        &--look {
+            background: $bg-04;
+        }
+        &--orang {
+            background: $bg-05;
+        }
+        &--adtel {
+            background: $bg-06;
+        }
+
+        &--click {
+            background: $bg-07;
+        }
+        &--eco {
+            background: $bg-08;
+        }
+        &--inf {
+            background: $bg-09;
+        }
+        &--city {
+            background: $bg-10;
+        }
+        &--art {
+            background: $bg-11;
+        }
+        &--ult {
+            background: $bg-12;
+        }
+    }
+    &__mob {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .trust {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 -60px;
+        }
+        &__item {
+            width: 33.3333%;
+        }
+        &__mob {
+            display: flex
+        }
+        &__title {
+            padding-bottom: 28px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .trust {
+        padding-top: 61px;
+        &__item {
+            width: 25%;
+        }
+    }
+}

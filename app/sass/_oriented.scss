@@ -1,0 +1,113 @@
+.oriented {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    &__buttons {
+        display: flex;
+        margin-right: -30px;
+        overflow: auto;
+        margin-bottom: 30px;
+    }
+    &__info {
+        border-top: 4px solid  $info;
+    }
+    &__btn {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $grey-text;
+        text-transform: none;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin-right: 30px;
+        min-width: max-content;
+        cursor: pointer;
+        &:hover {
+            color: $accent-05;
+        }
+        &.current {
+            background: $gradient-redtext;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $basic-white;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 30px;
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: $basic-white;
+        text-transform: none;
+        text-decoration: none;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .oriented {
+        padding-top: 60px;
+        &__buttons {
+            margin-right: -60px;
+            margin-bottom: 60px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            color: $basic-white;
+            padding-top: 60px;
+        }
+        &__btn {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            color: $grey-text;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .oriented {
+        padding-top: 59px;
+        display: grid;
+        grid-template-columns: 439px auto;
+        grid-template-rows: max-content;
+        align-items: center;
+        &__buttons {
+            margin: 0;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 16px 60px 13px 0;
+            border-right: 4px solid $info;
+        }
+
+        &__btn {
+            margin-right: 0;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__info {
+            border-top: none;
+            padding-left: 60px;
+        }
+        &__title {
+            padding-top: 0;
+        }
+    }
+}

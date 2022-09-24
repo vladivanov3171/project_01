@@ -1,0 +1,72 @@
+.achievements {
+    background: $grey-bg;
+    padding-bottom: 30px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $main;
+        padding-top: 30px;
+    }
+    &__box {
+        margin: 27px;
+    }
+    &__slider {
+        background: $basic-white;
+        border-radius: 12px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        &--tablet {
+            display: none;
+        }
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        margin-left: 6px;
+        margin-right: 7px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        & svg {
+            display: block;
+        }
+        & svg:hover circle {
+            opacity: 0.6;
+        }
+        &.current svg circle {
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .achievements {
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            margin: 27px 0;
+        }
+        &__slider {
+            width: 25%;
+
+        }
+        &__slider--tablet {
+            display: flex;
+            margin-left: 40px;
+        }
+        &__btn--tablet {
+            display: none;
+        }
+    }
+}

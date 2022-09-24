@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 375px;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.container--small {
+    max-width: 1200px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.gradient-purp {
+    background: url(../img/h-small.svg) no-repeat center top,
+                $gradient-supersoft;
+    background-size: 523px 600px, cover;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    &::after {
+        content: '';
+        height: 10px;
+        background-color: $after;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        border-radius: 0px 0px 12px 12px;
+    }
+    &::before {
+        content: '';
+        height: 10px;
+        background-color: $before;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        border-radius: 0px 0px 12px 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+    .gradient-purp {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) { 
+    .gradient-purp {
+        background-size: 669px 768px, cover;
+    }
+}
+
+@media (min-width: 1440px) { 
+    .gradient-purp {
+        background-size: 697px 799px, cover;
+    }
+}
