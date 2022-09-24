@@ -55,7 +55,10 @@
         &__box {
             display: flex;
             justify-content: space-between;
-            margin: 27px 0;
+            margin-top: 28px;
+            margin-bottom: 26px;
+            margin-left: 0;
+            margin-right: 0;
         }
         &__slider {
             width: 25%;

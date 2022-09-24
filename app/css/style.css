@@ -418,7 +418,10 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 27px 0;
+    margin-top: 28px;
+    margin-bottom: 26px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .achievements__slider {
     width: 25%;
@@ -957,6 +960,9 @@
 }
 
 @media (min-width: 768px) {
+  .trust {
+    padding-top: 61px;
+  }
   .trust__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -975,7 +981,7 @@
     display: flex;
   }
   .trust__title {
-    padding-bottom: 28px;
+    padding-bottom: 29px;
   }
 }
 
@@ -1147,20 +1153,29 @@
   .tell__item:nth-child(3) {
     grid-column: span 2;
   }
+  .tell__item:last-child {
+    margin-top: 30px;
+  }
   .tell__title {
     font-size: 38px;
     line-height: 46px;
     padding-top: 11px;
   }
+  .tell__name {
+    padding-top: 1px;
+  }
 }
 
 @media (min-width: 992px) {
+  .tell {
+    padding-top: 30px;
+  }
   .tell__list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
   }
   .tell__item {
-    margin-top: 30px;
+    margin-top: 29px;
   }
   .tell__item:last-child {
     margin-top: 30px;
@@ -1175,6 +1190,9 @@
   .tell__item:nth-child(3) {
     margin-left: 20px;
     grid-column: span 1;
+  }
+  .tell__item:last-child {
+    margin-top: 29px;
   }
 }
 
@@ -1565,6 +1583,9 @@
     padding-top: 6px;
     letter-spacing: 0.06em;
   }
+  .team__dots {
+    padding-top: 27px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1588,6 +1609,9 @@
   }
   .team__text {
     letter-spacing: 0.06em;
+  }
+  .team__dots {
+    padding-top: 29px;
   }
 }
 

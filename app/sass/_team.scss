@@ -116,6 +116,9 @@
             padding-top: 6px;
             letter-spacing: 0.06em;
         }
+        &__dots {
+            padding-top: 27px;
+        }
     }
 }
 
@@ -134,8 +137,11 @@
         &__img {
             height: auto;
         }
-       &__text {
+        &__text {
             letter-spacing: 0.06em; 
+        }
+        &__dots {
+            padding-top: 29px;
         }
     }
 }
